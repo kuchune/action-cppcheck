@@ -68,16 +68,14 @@ linters:
     - decorder
     # 检查err的定义规范--types类型的定义是以Error结尾的，常量的定义是Err打头的
     - errname
-    # SQL Query方法错误检查
-    - execinquery
     # 禁止errors使用'=='和'!='等表达式--与nil和io.EOF比较除外
-    - goerr113
+    - err113
     # 官方代码格式化
     - gofmt
     - gofumpt
     - goimports
     # 禁止使用魔法数字
-    - gomnd
+    - mnd
     # 检查类似printf的函数是否以f结尾
     - goprintffuncname
     # 安全检查
